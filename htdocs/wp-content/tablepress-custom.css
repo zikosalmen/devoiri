@@ -1,0 +1,111 @@
+/* TABLE GÉNÉRALE */
+.tablepress {
+	border-collapse: collapse;
+	width: 100%;
+	font-family: Arial, sans-serif;
+	background-color: #ffffff;
+	color: #0059b3;
+	border-radius: 12px;
+	overflow: hidden;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* EN-TÊTE DU TABLEAU */
+.tablepress thead th {
+	background-color: rgba(194,194,194,0.87);
+	color: #0059b3;
+	padding: 12px;
+	border: 1px solid #0059b3;
+	text-align: center;
+	font-weight: bold;
+}
+
+/* LIGNES IMPAIRES / PAIRES */
+.tablepress tbody tr:nth-child(odd) {
+	background-color: #e6f0ff;
+}
+
+.tablepress tbody tr:nth-child(even) {
+	background-color: #ffffff;
+}
+
+/* CELLULES */
+.tablepress tbody td {
+	padding: 10px;
+	border: 1px solid #99bbff;
+	text-align: center;
+	color: #0059b3;
+}
+
+/* HOVER */
+.tablepress tbody tr:hover {
+	background-color: #cce0ff;
+	cursor: pointer;
+}
+
+/* COINS ARRONDIS */
+.tablepress tbody tr:first-child td:first-child {
+	border-top-left-radius: 12px;
+}
+
+.tablepress tbody tr:first-child td:last-child {
+	border-top-right-radius: 12px;
+}
+
+.tablepress tbody tr:last-child td:first-child {
+	border-bottom-left-radius: 12px;
+}
+
+.tablepress tbody tr:last-child td:last-child {
+	border-bottom-right-radius: 12px;
+}
+
+/* PAGINATION */
+.dt-container .dt-paging {
+	margin-top: 15px;
+	text-align: center;
+}
+
+.dt-container .dt-paging .dt-paging-button {
+	background-color: rgba(234,234,234,0.74);
+	color: #0059b3 !important;
+	border: 1px solid #0059b3;
+	border-radius: 6px;
+	padding: 5px 10px;
+	margin: 0 3px;
+	transition: all .3s ease;
+}
+
+.dt-container .dt-paging .dt-paging-button:hover,
+.dt-container .dt-paging .dt-paging-button.current {
+	background-color: #0059b3;
+	color: #ffffff !important;
+}
+
+/* BARRE DE RECHERCHE */
+.dt-container .dt-search input {
+	background-color: rgba(234,234,234,0.74);
+	color: #0059b3;
+	border: 1px solid #0059b3;
+	border-radius: 6px;
+	padding: 5px 10px;
+	margin-left: 10px;
+}
+
+/* SÉLECTEUR NOMBRE DE LIGNES */
+.dt-container .dt-length select {
+	background-color: rgba(234,234,234,0.74);
+	color: #0059b3;
+	border: 1px solid #0059b3;
+	border-radius: 6px;
+	padding: 5px;
+	margin-left: 10px;
+}
+
+/* TEXTE AU-DESSUS ET EN-DESSOUS DU TABLEAU */
+.dt-container .dt-info,
+.dt-container .dt-length label,
+.dt-container .dt-search label {
+	color: white;
+	font-weight: bold;
+}
